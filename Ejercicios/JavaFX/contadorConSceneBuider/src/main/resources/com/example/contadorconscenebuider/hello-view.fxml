@@ -33,7 +33,10 @@
       </HBox>
       <HBox alignment="CENTER" layoutX="9.0" layoutY="289.0" prefHeight="84.0" prefWidth="727.0">
          <children>
-            <Button mnemonicParsing="false" onAction="#onClickResetConuter" prefHeight="67.0" prefWidth="332.0" text="Reset" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" />
+            <Button mnemonicParsing="false" onAction="#onClickResetConuter" prefHeight="67.0" prefWidth="332.0" text="Reset" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+               <opaqueInsets>
+                  <Insets right="10.0" />
+               </opaqueInsets></Button>
          </children>
       </HBox>
       <Label alignment="CENTER" contentDisplay="CENTER" layoutX="212.0" layoutY="47.0" prefHeight="77.0" prefWidth="332.0" text="CONTADOR CON SCENE BUIlDER">
