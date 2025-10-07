@@ -1,5 +1,5 @@
 #panelPrincipal{
-    -fx-background-color: #82eae6;
+    -fx-background-color: #0d4a48;
     -fx-text-fill: #ffffff;
 }
 Button{
@@ -10,7 +10,7 @@ Button{
     -fx-background-radius: 50,50,50,50;
     }
 #texto{
-    -fx-text-fill: #ffffff;
+    -fx-text-fill: #2b3f44;
     -fx-font-family: "Fira Code";
     -fx-text-alignment:center ;
     -fx-font-weight: bold;

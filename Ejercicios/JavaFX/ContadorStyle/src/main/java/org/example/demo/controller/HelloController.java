@@ -19,7 +19,9 @@ public class HelloController {
     private TextField cantidad = new TextField();
     @FXML
     private ProgressBar barraProgreso = new ProgressBar(0.0);
-
+     @FXML
+    private Label viewPorce = new Label("0%");
+    @FXML
     private IntegerProperty numPulsaciones = new SimpleIntegerProperty(0);
 
 
@@ -47,10 +49,14 @@ public class HelloController {
         }else if(getNumPulsaciones() == 0){
             pantalla.setText("La pantalla se a reiniciado a cero, pulsa un boton.");
             onBarrProgres();
+            viewPorce.setText("0%");
         }else{
             pantalla.setText("La contador es ha pulsado " +getNumPulsaciones()+ " veces.");
-            float progress = (float)getNumPulsaciones()/50;
-            barraProgreso.setProgress(progress);
+            if(getNumPulsaciones() >= 0) {
+                float progress = (float) getNumPulsaciones() / 50;
+                barraProgreso.setProgress(progress);
+                viewPorce.setText((int) (barraProgreso.getProgress() * 100) + "%");
+            }
         }
     }
 

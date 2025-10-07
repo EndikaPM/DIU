@@ -45,5 +45,6 @@
          </opaqueInsets>
       </Button>
       <Label fx:id="pantalla" alignment="CENTER" layoutX="172.0" layoutY="181.0" onInputMethodTextChanged="#actualizarTexto" prefHeight="39.0" prefWidth="342.0" text="Pulsa algun boton" textAlignment="CENTER" textFill="#cd1b1b" />
+      <Label fx:id="viewPorce" layoutX="583.0" layoutY="134.0" text="0%" />
    </children>
 </AnchorPane>

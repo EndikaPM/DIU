@@ -17,21 +17,23 @@ public class HelloApplication extends Application {
         String css = HelloApplication.class.getResource("/Style/StyleFMX.css").toExternalForm();
 
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
-        Parent root = fxmlLoader.load();
-        Scene scene1 = new Scene(root);
+        //Parent root = fxmlLoader.load();
+        Scene scene1 = new Scene(fxmlLoader.load());
         scene1.getStylesheets().add(css);
         HelloController controller = fxmlLoader.getController();
         stage.setScene(scene1);
+        stage.setX(10);
         stage.show();
 
 
         Stage stage2 = new Stage();
         FXMLLoader fxmlLoader2 = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
-        Parent root2 = fxmlLoader2.load();
-        Scene scene2 = new Scene(root2);
+        //Parent root2 = fxmlLoader2.load();
+        Scene scene2 = new Scene(fxmlLoader2.load());
         scene2.getStylesheets().add(css);
         HelloController controller2 = fxmlLoader2.getController();
         stage2.setScene(scene2);
+        stage2.setX(30);
         stage2.show();
 
         controller.numPulsacionesProperty().bindBidirectional(controller2.numPulsacionesProperty());
