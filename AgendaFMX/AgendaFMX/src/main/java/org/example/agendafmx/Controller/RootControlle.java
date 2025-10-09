@@ -3,7 +3,7 @@ package org.example.agendafmx.Controller;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
-public class AgendaController {
+public class RootControlle {
     @FXML
     private Label welcomeText;
 
