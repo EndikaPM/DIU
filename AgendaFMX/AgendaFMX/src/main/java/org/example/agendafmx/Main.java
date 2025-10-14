@@ -3,14 +3,26 @@ package org.example.agendafmx;
 import java.io.IOException;
 
 import javafx.application.Application;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
+import org.example.agendafmx.Controller.PersonController;
+import org.example.agendafmx.Model.Person;
 
 public class Main extends Application {
 
+    /**
+     * The data as an observable list of Persons.
+     */
+
+
+    /**
+     * Constructor
+     */
     private Stage primaryStage;
     private BorderPane rootLayout;
 
@@ -23,6 +35,7 @@ public class Main extends Application {
 
         showPersonOverview();
     }
+
 
     /**
      * Initializes the root layout.
@@ -43,22 +56,6 @@ public class Main extends Application {
         }
     }
 
-    /**
-     * Shows the person overview inside the root layout.
-     */
-    public void showPersonOverview() {
-        try {
-            // Load person overview.
-            FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(Main.class.getResource("/views/person_overview.fxml"));
-            AnchorPane personOverview = (AnchorPane) loader.load();
-
-            // Set person overview into the center of root layout.
-            rootLayout.setCenter(personOverview);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
 
     /**
      * Returns the main stage.
@@ -67,8 +64,42 @@ public class Main extends Application {
     public Stage getPrimaryStage() {
         return primaryStage;
     }
-
+    private static ObservableList<Person> personData = FXCollections.observableArrayList();
     public static void main(String[] args) {
         launch(args);
+
+        personData.add(new Person("Hans", "Muster"));
+        personData.add(new Person("Ruth", "Mueller"));
+        personData.add(new Person("Heinz", "Kurz"));
+        personData.add(new Person("Cornelia", "Meier"));
+        personData.add(new Person("Werner", "Meyer"));
+        personData.add(new Person("Lydia", "Kunz"));
+        personData.add(new Person("Anna", "Best"));
+        personData.add(new Person("Stefan", "Meier"));
+        personData.add(new Person("Martin", "Mueller"));
     }
+
+    public ObservableList<Person> getPersonData() {
+        return personData;
+    }
+
+    public void showPersonOverview() {
+        try {
+            // Load person overview.
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(Main.class.getResource("view/PersonOverview.fxml"));
+            AnchorPane personOverview = (AnchorPane) loader.load();
+
+            // Set person overview into the center of root layout.
+            rootLayout.setCenter(personOverview);
+
+            // Give the controller access to the main app.
+            PersonController controller = loader.getController();
+            controller.setMain(this);
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
 }

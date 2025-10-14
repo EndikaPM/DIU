@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="389d2615-f49f-49c7-a9b8-be22ede32750" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/AgendaFMX/src/main/resources/views/root_layout.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgendaFMX/src/main/java/org/example/agendafmx/Controller/AgendaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AgendaFMX/src/main/java/org/example/agendafmx/Controller/PersonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgendaFMX/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/AgendaFMX/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgendaFMX/src/main/java/org/example/agendafmx/Controller/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AgendaFMX/src/main/java/org/example/agendafmx/Controller/PersonController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AgendaFMX/src/main/java/org/example/agendafmx/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/AgendaFMX/src/main/java/org/example/agendafmx/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgendaFMX/src/main/resources/org/example/agendafmx/View/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/AgendaFMX/src/main/resources/views/person_overview.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgendaFMX/src/main/java/org/example/agendafmx/Model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/AgendaFMX/src/main/java/org/example/agendafmx/Model/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgendaFMX/src/main/resources/views/person_overview.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/AgendaFMX/src/main/resources/views/person_overview.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +77,9 @@
       <workItem from="1760000775636" duration="477000" />
       <workItem from="1760003353962" duration="2155000" />
       <workItem from="1760005529803" duration="1095000" />
+      <workItem from="1760077221141" duration="1000" />
+      <workItem from="1760422983081" duration="3092000" />
+      <workItem from="1760430066603" duration="65000" />
     </task>
     <servers />
   </component>

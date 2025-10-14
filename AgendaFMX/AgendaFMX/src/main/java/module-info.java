@@ -7,6 +7,7 @@ module org.example.agendafmx {
     requires net.synedra.validatorfx;
     requires org.kordamp.bootstrapfx.core;
     requires com.almasb.fxgl.all;
+    requires java.desktop;
 
     opens org.example.agendafmx to javafx.fxml;
     exports org.example.agendafmx;
